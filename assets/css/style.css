@@ -1,0 +1,152 @@
+:root {
+    --menu-size: 250px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #eee;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar-button {
+    display: inline-block;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    transition: all 0.5s;
+    background: #eeeeee;
+}
+
+.content {
+    max-width: 800px;
+    width: 100%;
+    margin: 50px auto 0;
+}
+
+.menu-button {
+    display: inline-block;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    transition: all 0.5s;
+    background: #eeeeee;
+}
+
+.sidebar-menu {
+    position: fixed;
+    top: 0;
+    width: var(--menu-size);
+    height: 100%;
+    background-color: rgb(40, 42, 54);
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    justify-content: center;
+}
+
+.sidebar-menu ul li {
+    display: block;
+}
+
+.sidebar-menu ul li a {
+    transition: background 0.3s;
+    display: flex;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.sidebar-menu ul li a:hover {
+    background-color: rgb(49, 54, 85);
+}
+
+.sidebar-menu.effect {
+    transition: margin 0.4s;
+}
+
+.login-button {
+    display: inline-block;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    transition: all 0.5s;
+    background: #eeeeee;
+}
+.login-close-button{
+    display: flex;
+    justify-content: right;
+}
+
+.sidebar-login {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    background-color: rgb(40, 42, 54);
+    color: white;
+    padding: 15px;
+}
+
+.sidebar-login ul {
+    list-style: none;
+    justify-content: center;
+    margin: 15px;
+}
+
+.sidebar-login ul li {
+    display: block;
+}
+
+.sidebar-login ul li a {
+    transition: background 0.3s;
+    display: flex;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.sidebar-login ul li a:hover {
+    background-color: rgb(49, 54, 85);
+}
+
+.sidebar-login.effect {
+    transition: margin 0.4s;
+}
+
+@media (min-width: 768px) {
+    #btnClose {
+        display: none;
+    }
+}

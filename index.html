@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> WorkPass </title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+  <button id="btnMenuOpen" class="sidebar-button"><i class="fa-solid fa-bars" style="color: #000000;"></i> Menu</button>
+  <button id="btnLoginOpen" class="sidebar-button"> Conta <i class="fa-solid fa-user"></i></button>
+</header>
+
+<main class="content">
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque eius fugit nesciunt ad? Sint aperiam velit
+    esse sapiente soluta, non enim ea maiores a, quis quo? Deleniti eos earum ducimus.</p>
+  <button type="button" onclick="verificarLogon()"> Verificar espaços disponiveis </button>
+</main>
+
+<div id="menu" class="sidebar-menu">
+  <button id="btnMenuClose" class="menu-button"><i class="fa-solid fa-xmark" style="color: #000000;"></i> Fechar </button>
+  <ul>
+    <li><a href="#">Quem Somos</a></li>
+    <li><a href="#">Localização</a></li>
+    <li><a href="#">Galeria</a></li>
+    <li><a href="#">Produtos</a></li>
+    <li><a href="#">Contato</a></li>
+    <li><a href="#">Link aqui</a></li>
+  </ul>
+</div>
+
+<div id="login" class="sidebar-login">
+  <div class="login-close-button">
+    <button id="btnLoginClose" class="login-button"> Fechar <i class="fa-solid fa-xmark" style="color: #000000;"></i></button>
+  </div>
+    <h2>Login</h2>
+    <form>
+      <label for="login-username">Nome de Usuário:</label>
+      <input type="text" id="login-username" name="login-username"><br><br>
+      <label for="login-password">Senha:</label>
+      <input type="password" id="login-password" name="login-password"><br><br>
+      <button type="button" onclick="login()">Login</button>
+      <button type="button" onclick="logout()">Logout</button>
+    </form>
+    <h2>Não possuo uma conta</h2>
+    <form>
+      <label for="username">Nome de Usuário:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <button type="button" onclick="registrar()">Criar uma Conta</button>
+    </form>
+</div>
+
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
